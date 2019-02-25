@@ -43,6 +43,15 @@ class Display
     int * _pinsDisplay;
 };
 
+class DC
+{
+  public:
+    DC(int pin);
+    void turn(int turn);
+  private:
+    int _pinDC;
+};
+
 void wait(double nd);
 
 void defPin(int nPin, char param);

@@ -343,7 +343,15 @@ void Display::countDown(double nd = 1){
   digitalWrite(_pinsDisplay[6], LOW);
   delay(nd);
 }
-/////////////////////////////////// 
+///////////////////////////////////
+DC::DC(int pin){
+  pinMode(pin,OUTPUT);
+  _pinDC = pin;
+}
+void DC::turn(int turn){
+  analogWrite(_pinDC,turn);
+}
+///////////////////////////////////
 void wait(double nd){
     nd *= 1000;
     delay(nd);
