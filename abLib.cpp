@@ -3,8 +3,6 @@
   Created by Angel E. Berlanga, 13 1, 2019.
   Released into the public domain.
 */
-
-#include "arduino.h"
 #include "abLib.h"
 
 Led::Led(int pin)

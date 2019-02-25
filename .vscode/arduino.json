@@ -1,5 +1,5 @@
 {
-    "port": "COM5",
+    "port": "/dev/ttyUSB0",
     "board": "arduino:avr:uno",
-    "sketch": "..\\Code\\Arduino\\display7Seg\\display7Seg.ino"
+    "sketch": "examples/blink/blink.ino"
 }
