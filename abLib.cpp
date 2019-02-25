@@ -4,7 +4,7 @@
   Released into the public domain.
 */
 
-#include "arduino.h"
+#include "arduino.h" //IF YOU ARE USING A LINUX DIST DELETE THIS LINE
 #include "abLib.h"
 
 Led::Led(int pin)
