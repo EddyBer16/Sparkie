@@ -10,7 +10,7 @@ This is an arduino library writted, debugged and supported by ___Angel Berlanga_
 - **`defAllPins('O' or 'I')`**:  
 With this function you can define all the ports as `OUTPUT` (something very practical to work with LED sequences) or `INPUT`.  
 **For example**:  
-~~~
+~~~c++
     #include <abLib.h> // this includes the library
 
     void setup(){
@@ -27,7 +27,7 @@ With this function you can define all the ports as `OUTPUT` (something very prac
 - **`defPin(n_pin, 'O' or 'I')`**:  
 this function allows you to define a pin passing as parameter the led pin and **`'O'`** for **`OUTPUT`** and **`'I'`** for **`INPUT`**.  
 **For example**:  
-~~~
+~~~c++
   #include <myLibrary.h>
 
   void setup(){
@@ -42,7 +42,7 @@ This function allows you add a delay, but using seconds instead of milliseconds.
 - **`Led` (Class)**:  
 This class allows you to create an instance with the methods **`on`, `off`, `getPin` and `blink`**  
 **For example**:  
-~~~
+~~~c++
     #include <abLib.h> // this includes the library
 
     Led led1(13); // this creates an instance of Led on the pin 13
@@ -62,7 +62,7 @@ This class allows you to create an instance with the methods **`on`, `off`, `get
 - **`Button` (Class)**:  
 This class allows you to create an instance with the methods **`isPressed` and `getPin`**  
 **For example**:  
-~~~
+~~~c++
     #include <abLib.h>
 
     Led led(2); // this creates a led with on pin 2
@@ -81,7 +81,7 @@ This class allows you to create an instance with the methods **`isPressed` and `
 - **`Display` (Class)**:  
 This class allows you to create an instance with the methods **`show`, `countUp` and `countDown`**  
 **For example**:  
-~~~
+~~~c++
     #include <abLib.h> // this includes the library
 
     int pins[] = {2,3,4,5,6,7,8,9}; // this creates an array with the display ports
